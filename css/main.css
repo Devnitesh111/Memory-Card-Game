@@ -1,0 +1,127 @@
+
+:root {
+    --blueA: #b7aa58;
+    --blueB: #228248;
+    --blueC: #f0a8bf;
+    --blueD: #aba9af;
+}
+
+body{
+background-color: purple;
+}
+* {
+    transition: 200ms;
+    -o-transition: 200ms;
+    -moz-transition: 200ms;
+    -webkit-transition: 200ms;
+    text-align: center;
+    font-family: segoe ui;
+}
+
+
+main {
+    padding: 50px 20%;
+}
+
+
+main > img {
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid var(--blueA);
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+
+main > img:hover {
+    background: var(--blueD);
+    opacity: 1.0;
+}
+
+
+main > img:active {
+    border: 2px solid rgb(183, 39, 39);
+}
+
+
+.paddup {
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+
+.paddup:hover {
+    opacity: 1.0;
+}
+
+
+#play {
+    background-color: rgb(193, 164, 164);
+    padding: 0.5rem 1rem;
+    color: var(--blueB);
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px var(--blueB);
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+
+#play:hover {
+    background-color: var(--blueC);
+    cursor: pointer;
+    color: black;
+    opacity: 1.0;
+}
+
+
+#play:active {
+    background: rgb(185, 45, 45);
+    color: var(--blueA);
+}
+
+
+#win {
+    color: var(--blueB);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+  footer p {
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+ 
+    background: linear-gradient(45deg, #ff7e5f, red,aqua,green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+   
+    animation: gradient 5s linear infinite;
+  }
+  
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  footer p:hover {
+    color: greenyellow;
+    opacity: 1.0;
+    animation: none; 
+  }
+  
